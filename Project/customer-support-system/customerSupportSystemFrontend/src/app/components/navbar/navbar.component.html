@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#42145f">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/profile">{{ customerName }}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="products">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="dashboard">My Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All Products
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="dropdown-item mydropdown">
+                  <a class="dropbtn" style="text-decoration: inherit; color:inherit;"><b>Loans</b></a>
+                  <div class="dropdown-content">
+                    <a [routerLink]="['/loan', 'Personal']">Personal Loan</a>
+                    <a [routerLink]="['/loan', 'Educational']">Educational Loan</a>
+                    <a [routerLink]="['/loan', 'Home']">Home Loan</a>
+                    <a [routerLink]="['/loan', 'Car']">New Car Loan</a>
+                    <a [routerLink]="['/emical']">EMI Calculator</a>
+                  </div>
+                </div>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink="/creditcard">Credit Card</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.natwest.com/life-moments/housemate.html" target="_blank" >HouseMate App</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://roostermoney.com/" target="_blank">Rooster Money</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" [routerLink]="['/loan', 'Personal']">Fixed Deposit</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.natwest.com/insurance.html" target="_blank">Insurance</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="emical">EMI Calculator</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+          </ul>
+          <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="d-flex nav-item nav-link active" aria-current="page" routerLink="profile">Profile Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="d-flex btn btn-light" style="text-decoration: none;" (click)="logoutmethod()">Logout</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex" role="search"> -->
+          
+          <!-- <a class="d-flex nav-item nav-link active" aria-current="page" routerLink="profile">Profile Details</a> -->
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <!-- <button class="d-flex btn btn-light"><a style="text-decoration: none;" routerLink="/">Logout</a></button> -->
+        <!-- </form> -->
+      </div>
+    </div>
+  </nav>

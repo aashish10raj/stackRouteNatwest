@@ -1,0 +1,34 @@
+<p>{{username}}</p>
+<p>{{fruits[0]}}</p>
+<p>{{fruits}}</p>
+
+<!-- <ul>
+    <li *ngFor="let x of fruits">{{x}}</li>
+</ul> -->
+
+<input [id]="id" type="text">
+<!-- <input id="{{id}}" type="text"> -->
+
+<!-- <input type="text" disabled="{{isDisabled}}"> -->
+<input type="text" [disabled]="isDisabled">
+
+
+<h2 [class.text-red]="applyStyles" [class.text-underline]="applyStyles">Welcome to NatWest Training</h2>
+
+<h2 [ngClass]="styles">Welcome</h2>
+
+<h2 [style.color]="'red'" [style.fontSize]="'30pt'">Style Binding</h2>
+
+<h2 [style.color]="isError?'red':'green'">Conditional Style Binding</h2>
+
+<h2 [style.color]="colorname">{{colorname}}Color</h2>
+
+<h2 [ngStyle]="{'font-size':textSize}&&{'color':colorname}"> Using ngStyle Directive</h2>
+
+<input #firstname type="text" />
+
+<button (click)="sayHello(firstname)" class="btn btn-secondary">Submit</button>
+
+
+<input type="text" [(ngModel)]="description"/>
+<p>{{description}}</p>

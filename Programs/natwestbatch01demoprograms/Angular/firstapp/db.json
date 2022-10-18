@@ -1,0 +1,20 @@
+{
+  "contacts": [
+    {
+      "firstname": "Haresh",
+      "lastname": "S",
+      "email": "Haresh.S@gmail.com",
+      "city": "Mumbai",
+      "phone": "9876557856",
+      "id": 1
+    },
+    {
+      "firstname": "Bishwanath",
+      "lastname": "Mandal",
+      "email": "Bishwanath@gmail.com",
+      "city": "Cuttack",
+      "phone": "9876331198",
+      "id": 4
+    }
+  ]
+}

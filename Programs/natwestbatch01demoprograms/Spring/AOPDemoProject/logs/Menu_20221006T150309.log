@@ -1,0 +1,4 @@
+2022-10-06 15:03:09 [main] INFO  c.s.natwest.aop.aspect.MenuAspect -
+				MenuAspect::beforeTarget
+2022-10-06 15:03:09 [main] INFO  c.s.natwest.aop.aspect.MenuAspect -
+				MenuAspect::beforeTarget

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2+p{
+            color:blueviolet;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        button ~ p{
+            color: green;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Adjacent Sibling Selector (+) -->
+    <div>
+        <h2>This is header2</h2>
+        <p>This Paragraph immediately follows the header2</p>
+        <button>
+            <p>This Paragraph is not immediately follows the header2</p> 
+        </button>
+        <p>Another Paragraph</p>
+    </div>
+
+    <!-- General Sibling Selector (~) -->
+    <div>
+    <h2>I am heding Tag !</h2>
+    <p>I am paragraph Tag 1</p>
+    <button>
+        <p>I am paragraph Tag inside button</p>
+    </button>
+    <p>I am paragraph Tag 2</p>
+    <p>I am paragraph Tag 3</p>
+    <h3>I am another heding Tag !</h3>
+    <p>I am paragraph Tag 4</p>
+    </div>
+    
+</body>
+</html>

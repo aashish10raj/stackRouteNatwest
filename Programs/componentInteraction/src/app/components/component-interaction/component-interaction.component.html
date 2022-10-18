@@ -1,0 +1,45 @@
+<div class="container">
+    <table class="table table-striped table-hover">
+
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+        </tr>
+        <tr *ngFor="let product of products">
+            <ng-template [ngIf]="product.price>122">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.brand}}</td>
+                <td>{{product.price}}</td>
+            </ng-template>
+        </tr>
+        <!-- <div [ngSwitch]="color">
+            <div *ngSwitchCase="'red'">Red</div>
+            <div *ngSwitchCase="'blue'">blue</div>
+            <div *ngSwitchCase="'green'">green</div>
+
+        </div> -->
+    </table>
+    {{parentData}}
+
+ 
+
+  <section>
+    <div class="example-label">Flat</div>
+    <div class="example-button-row">
+
+      <button mat-flat-button color="primary" (click)="sendData()">Click to send the data to parent component</button>
+     
+    </div>
+  </section>
+
+
+
+
+ 
+
+
+</div>

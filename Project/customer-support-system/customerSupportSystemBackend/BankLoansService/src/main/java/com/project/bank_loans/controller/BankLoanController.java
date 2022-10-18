@@ -1,0 +1,33 @@
+package com.project.bank_loans.controller;
+
+import com.project.bank_loans.model.BankLoan;
+import com.project.bank_loans.services.BankLoanService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+//@CrossOrigin("*")
+@RequestMapping("/api/v1/bankloan")
+public class BankLoanController {
+    //CustomerDAO cus_dao;
+    @Autowired
+    BankLoanService service;
+    ResponseEntity response;
+    @GetMapping("/showLoans")
+    public ResponseEntity<?> getCustomLoans(@RequestParam("customerId") String customerId, @RequestParam("requiredAmt") Double amount,
+                                            @RequestParam("creditrating") int creditrating){
+        //Customer customer=//.findBycustomerId(customerId);
+        List<BankLoan> loan_list=service.getLoans(customerId, amount,creditrating);
+
+        if(loan_list !=null) {
+            response=new ResponseEntity<List<BankLoan>>(loan_list, HttpStatus.OK);
+        }else {
+            response=new ResponseEntity<String>("Failure", HttpStatus.BAD_REQUEST);
+        }
+        return response;
+    }
+}

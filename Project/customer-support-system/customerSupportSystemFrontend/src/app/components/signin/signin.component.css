@@ -1,0 +1,53 @@
+.full-width{
+    width:100%;
+}
+.centerimg{
+    display: block;
+    margin-left:auto ;
+    margin-right: auto;
+    width:50%
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    color: royalblue;
+}
+p{
+    font-size: large;
+}
+a{
+    font-size: small;
+}
+.alert {
+    /* position: relative; */
+    color: #856404;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+
+.ml20{
+    margin-left: 20px !important;
+}
+.mr20{
+    margin-right: 20px !important;
+}
+.mt20{
+    margin-top: 20px !important;
+}
+.mb20{
+    margin-bottom: 20px !important;
+}
+.ml10{
+    margin-left: 10px !important;
+}
+.mr10{
+    margin-right: 10px !important;
+}
+.mt10{
+    margin-top: 10px !important;
+}
+.mb10{
+    margin-bottom: 10px !important;
+}

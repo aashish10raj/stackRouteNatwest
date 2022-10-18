@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App CDN Demo</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const Header=(props)=>{
+            return (
+                <div>
+                <h1>Welcome to {props.brand}</h1>
+                <p>{props.description}</p>
+                </div>
+            )
+        }
+
+        const Section = (props) =>{
+            return (
+                <div>
+                  {props.children}
+                </div>
+            )
+
+        }
+        
+        // const Card = (props) =>{
+        //     return (
+        //         <div>
+        //             {props.children}
+        //         </div>
+        //     )
+        // }
+
+        const ContactCard = (props)=>{
+            return (
+                 <div>
+                  <h3>{props.name}</h3>
+                  <p> {props.email}</p>
+                </div>
+            )
+        }
+
+        ReactDOM.render(<Section>
+            <Header brand="StackRoute" description="FSD Training"/>
+            <ContactCard name='Peter' email="Peter@gmail.com" />
+            <ContactCard name='Harshitha' email="Harishitha@gmail.com" />
+            <ContactCard name='Divyani' email="Divyani@gmail.com" /> </Section>
+            , document.getElementById('root'));
+    </script>
+    
+</body>
+</html>

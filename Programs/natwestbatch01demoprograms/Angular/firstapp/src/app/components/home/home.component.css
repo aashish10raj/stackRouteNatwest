@@ -1,0 +1,14 @@
+.text-red{
+    color: red;
+}
+
+.text-green{
+    color:green;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+.text-italics{
+    font-style: italic;
+}

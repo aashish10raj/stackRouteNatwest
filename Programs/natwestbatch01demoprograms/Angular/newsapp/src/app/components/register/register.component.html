@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <form #registerForm="ngForm" (ngSubmit)="registerUser(registerForm)">
+            <div class="mt-2">
+                <input type="text" ngModel #firstname="ngModel" name="firstname" required class="form-control" placeholder="First Name">
+                <div class="text-danger mt-1" *ngIf="firstname.errors?.['required']&& firstname.dirty">
+                    First Name is required.
+                  </div>
+            </div>
+            <div class="mt-2">
+                <input type="text" ngModel #lastname="ngModel" name="lastname" required class="form-control" placeholder="Last Name">
+                <div class="text-danger mt-1" *ngIf="lastname.errors?.['required']&& lastname.dirty">
+                    Last Name is required.
+                  </div>
+            </div>
+            <div class="mt-2">
+                <input type="text" ngModel #city="ngModel" name="city" required class="form-control" placeholder="City">
+                <div class="text-danger mt-1" *ngIf="city.errors?.['required']&& city.dirty">
+                    City Name is required.
+                  </div>
+            </div>
+            <div class="mt-2">
+                <input type="text" ngModel #age="ngModel" name="age" required pattern="[0-9]{1,2}"class="form-control" placeholder="Age">
+                <div class="text-danger mt-1" *ngIf="age.errors?.['required']&& age.dirty">
+                    Age is required.
+                  </div>
+                  <div class="text-danger mt-1" *ngIf="age.errors?.['pattern']&& age.dirty">
+                    Age must be below 100.
+                  </div>
+            </div>
+            <div class="mt-2">
+                <input type="email" ngModel #email="ngModel" name="email" required class="form-control" placeholder="Email">
+                <div class="text-danger mt-1" *ngIf="email.errors?.['required']&& email.dirty">
+                    Email is required.
+                  </div>
+            </div>
+            <div class="mt-2">
+                <input type="password" ngModel #password="ngModel" name="password" required class="form-control" placeholder="Password">
+                <div class="text-danger mt-1" *ngIf="password.errors?.['required']&& password.dirty">
+                    Password is required.
+                  </div>
+            </div>
+            
+            <div class="mt-2">
+                <button class="btn btn-primary">Register</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

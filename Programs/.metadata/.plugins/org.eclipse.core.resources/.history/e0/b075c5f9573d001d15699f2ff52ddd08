@@ -1,0 +1,8 @@
+package com.stackroute.natwest.AnnotationProj;
+
+public class Samsung {
+
+	public void features() {
+		System.out.println("Octa core");
+	}
+}

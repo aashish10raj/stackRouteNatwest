@@ -1,0 +1,19 @@
+package com.stackroute.natwest.AnnotationProj;
+
+public class Samsung {
+
+	private MobileProcessor cpu;
+	
+	public void features() {
+		System.out.println("Octa core");
+		cpu.process();
+	}
+
+	public MobileProcessor getCpu() {
+		return cpu;
+	}
+
+	public void setCpu(MobileProcessor cpu) {
+		this.cpu = cpu;
+	}
+}

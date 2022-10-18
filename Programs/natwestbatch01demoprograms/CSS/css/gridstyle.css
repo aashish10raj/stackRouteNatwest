@@ -1,0 +1,21 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-areas: 'header header header' 'menu main side' 'footer footer footer';
+}
+
+.box1{
+    grid-area: header;
+}
+.box2{
+    grid-area: menu;
+}
+.box3{
+    grid-area: main;
+}
+.box4{
+    grid-area: side;
+}
+.box5{
+    grid-area: footer;
+}

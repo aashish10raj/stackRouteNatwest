@@ -1,0 +1,26 @@
+Fetch API 
+---------
+Using Fetch API you can make HTTP request to REST API.
+
+fetch(url)
+json();
+
+REST : Representational State Transfer
+      It is used to access the things on internet and exchange same.
+      Used to create HTTP Based Service.
+
+JSON - JavaScript Object Notation
+     - It is data inter change format.
+
+for example:
+             {
+                name:"Peter".
+                email:"Peter@gmail.com"
+             }
+
+HTTP Methods
+------------
+Get()
+Post()
+Put()
+Delete()

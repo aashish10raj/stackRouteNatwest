@@ -1,0 +1,75 @@
+<h2>ContactList App</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.firstname" placeholder="First Name"/>
+            </div>
+
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.lastname" placeholder="Last Name"/>
+            </div>
+
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.email" placeholder="Email"/>
+            </div>
+
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.city" placeholder="City"/>
+            </div>
+
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.phone" placeholder="Phone"/>
+            </div>
+
+            <div class="mt2">
+               <button class="btn btn-primary" (click)="addContact()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-3 mb-2" *ngFor="let x of contacts">
+        <div class="card">
+            <div class="card-body">
+             <i class="fas fa-times float-end fa-lg text-danger" (click)="removeContact(x.id)"></i>
+             <i class="fas fa-pencil-alt float-end fa-lg text-warning px-2" (click)="getContact(x.id)"></i>
+              <h5 class="card-title">{{x.firstname}} {{x.lastname}}</h5>
+              <p class="card-text">{{x.email}}</p>
+              <p class="card-text">{{x.city}}</p>
+              <p class="card-text">{{x.phone}}</p>     
+            </div>
+          </div>
+    </div>
+</div>
+
+<div *ngIf="flag">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.firstname" placeholder="First Name"/>
+            </div>
+
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.lastname" placeholder="Last Name"/>
+            </div>
+
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.email" placeholder="Email"/>
+            </div>
+
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.city" placeholder="City"/>
+            </div>
+
+            <div class="mt2">
+                <input type="text" class="form-control" [(ngModel)]="contact.phone" placeholder="Phone"/>
+            </div>
+
+            <div class="mt2">
+               <button class="btn btn-primary" (click)="onsubmit()">Submit</button>
+            </div>
+        </div>
+    </div>
+    

@@ -1,0 +1,34 @@
+<div class="container">
+    <!-- Content here -->
+    <div class="mb-4">
+    <form (ngSubmit)="onSubmit()">
+      <label>Enter Required Amount for Loan: </label>
+      <input class="mx-3 my-3" [(ngModel)]="requiredAmt" name="requiredAmt" type="text" placeholder="Required Amount">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+
+    <h1>Apply for the best loan based on your profile </h1>
+    <hr>
+
+        <div class="row">
+            <div *ngFor="let loan of customLoans" class="col-sm-6 col-md-4 mt-3">
+              <div class="card mx-4">
+                <div class="card-header">
+                  <h2 class="mb-0">{{ loan_type }} Loan</h2>
+                </div>
+                <div class="card-body">
+                  <!-- <h3 class="card-title mt-2"> {{ loan_type }} Loan</h3> -->
+                  <p class="card-text"> <b> Principal Amount: </b> {{ requiredAmt }}</p>
+                  <p class="card-text"> <b> Interest rate: </b> {{ loan.interestRate }} %</p>
+                  <p class="card-text"> <b> Tenure: </b> {{ loan.time }} months</p>
+                  <a mat-raised-button color='primary' class="btn btn-primary" (click)="onApplyClick(loan)" routerLink="/applyLoan">Apply Online</a>
+                  <!-- [routerLink]="['/apply', loan_type, loan.interestRate, requiredAmt, loan.time]" -->
+                </div>
+              </div>
+            </div>
+            
+          </div>
+    
+  </div>
+  

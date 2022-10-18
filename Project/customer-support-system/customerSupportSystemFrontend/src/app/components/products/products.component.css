@@ -1,0 +1,16 @@
+/* .grey-bg{
+    background-color: rgb(240, 240, 240);
+} */
+
+.zoom-hover:hover{
+    transform: scale(1.1);    
+}
+
+.card:hover{
+    box-shadow: 0 0 15px rgba(33,33,33,.2);
+}
+
+h2{
+    font-size: 20pt;
+    font-family: sans-serif;
+}

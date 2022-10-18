@@ -1,0 +1,35 @@
+package com.natwest.BankAccount.controller;
+
+import com.natwest.BankAccount.model.BankAccount;
+import com.natwest.BankAccount.service.accountservice;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+@RestController
+//@CrossOrigin("*")
+@RequestMapping("/api/v1/bankservice")
+public class accountcontroller {
+    @Autowired
+    private accountservice service;
+    ResponseEntity response;
+    @GetMapping("/getaccounts")
+    public ResponseEntity<?> getAccounts(@RequestParam("customerId") String customerId){
+        List<BankAccount> acc_list=service.getAccount(customerId);
+        if(acc_list !=null) {
+            response=new ResponseEntity<List<BankAccount>>(acc_list, HttpStatus.OK);
+        }else {
+            response=new ResponseEntity<String>("Failure", HttpStatus.BAD_REQUEST);
+        }
+        return response;
+//        return ResponseEntity.ok(new Customer(c.getId(),c.getCustomerId(),c.getName(),
+//                c.getMobileno(),c.getEmail(),c.getAge(),c.getEmp_type(),c.getPassword()));
+        //return ResponseEntity.ok(c);
+    }
+    @PostMapping("/addaccount")
+    public BankAccount addAccount(@RequestBody BankAccount acc) {
+        return service.addBankAccount(acc);
+    }
+}

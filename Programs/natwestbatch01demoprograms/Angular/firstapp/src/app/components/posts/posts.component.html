@@ -1,0 +1,18 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let post of posts">
+            <div class="card" style="width: 18rem;">
+                <img src="{{post?.image}}" class="card-img-top" alt="Post Pics">
+                <div class="card-body">
+                  <h5 class="card-title">{{post?.text}}</h5>
+                  <p class="">
+                   <span *ngFor="let item of post.tags" class="badge rounded-pill bg-danger">
+                    {{item}}
+                   </span>
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

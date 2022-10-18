@@ -1,0 +1,40 @@
+<!-- Using Pipes -->
+<h1>Pipe Demo</h1>
+<h2>Name is : {{empname | uppercase}}</h2>
+<h3>Salary : {{salary | currency:'CAD'}}</h3>
+<h3>Date of Joining : {{doj | date:'shortDate'}}</h3>
+<h3>Mobile Number : {{mobno | transformdata}}</h3>
+
+
+<h2>{{name}}</h2>
+<p>
+<button class="btn btn-secondary" (click)="sendData()">Pass Data</button>
+</p>
+<div class="container">
+    <table class="table-bordered w-50">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+        </tr>
+        <tr *ngFor="let item of products"[style.backgroundColor]="item.price>20000?'red':'green'">
+            <!-- <ng-template [ngIf]="item.price>20000">  -->
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.brand}}</td>
+            <td>{{item.price}}</td>
+        <!-- </ng-template> -->
+        </tr>
+
+        <!-- ngSwitch directive -->
+
+        <div [ngSwitch]="color">
+         <div *ngSwitchCase="'red'"> You picked red</div>
+         <div *ngSwitchCase="'blue'"> You picked blue</div>
+         <div *ngSwitchCase="'green'"> You picked green</div>
+         <div *ngSwitchDefault> Pick color again</div>
+        </div>
+
+    </table>
+</div>

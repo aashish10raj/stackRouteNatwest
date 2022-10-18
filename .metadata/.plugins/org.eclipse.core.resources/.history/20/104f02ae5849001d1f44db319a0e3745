@@ -1,0 +1,28 @@
+package com.project;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+
+public class BankLoansServiceApplication implements CommandLineRunner {
+	@Autowired
+//	private CustomerService customerService;
+	public static void main(String[] args) {
+		SpringApplication.run(BankLoansServiceApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println("Starting code");
+//		Customer c=new Customer();
+//		c.setCustomerId("1234");
+//		c.setName("Divyang");
+//		c.setEmail("abc@gmail.com");
+//		c.setPassword("1234");
+//		c.setMobileno("1234567890");
+//		customerService.addCustomer(c);
+	}
+}

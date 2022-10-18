@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Metting @ 9 AM"
+    },
+    {
+      "id": 2,
+      "title": "Buy Groceries"
+    },
+    {
+      "id": 3,
+      "title": "Pay Electricity Bill"
+    },
+    {
+      "id": 4,
+      "title": "Buy Stationary Item "
+    },
+    {
+      "title": "Dinner @ 10 PM",
+      "id": 5
+    },
+    {
+      "title": "Completing Assignment @ 12",
+      "id": 6
+    }
+  ]
+}

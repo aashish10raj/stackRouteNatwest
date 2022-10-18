@@ -1,0 +1,42 @@
+2022-10-06 15:00:15 [main] DEBUG o.s.c.a.AnnotationConfigApplicationContext -
+				Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@8297b3a
+2022-10-06 15:00:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory -
+				Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2022-10-06 15:00:15 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner -
+				Identified candidate component class: file [/home/rajeev/Documents/NatWest/natwestbatch01demoprograms/Spring/AOPDemoProject/target/classes/com/stackroute/natwest/aop/aspect/MenuAspect.class]
+2022-10-06 15:00:15 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner -
+				Identified candidate component class: file [/home/rajeev/Documents/NatWest/natwestbatch01demoprograms/Spring/AOPDemoProject/target/classes/com/stackroute/natwest/aop/service/FoodService.class]
+2022-10-06 15:00:15 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner -
+				Identified candidate component class: file [/home/rajeev/Documents/NatWest/natwestbatch01demoprograms/Spring/AOPDemoProject/target/classes/com/stackroute/natwest/aop/service/MenuService.class]
+2022-10-06 15:00:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory -
+				Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2022-10-06 15:00:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory -
+				Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2022-10-06 15:00:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory -
+				Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2022-10-06 15:00:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory -
+				Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2022-10-06 15:00:15 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory -
+				Creating shared instance of singleton bean 'appConfig'
+2022-10-06 15:00:15 [main] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+				Found AspectJ method: public void com.stackroute.natwest.aop.aspect.MenuAspect.aroundTarget(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+2022-10-06 15:00:15 [main] DEBUG o.s.a.a.a.ReflectiveAspectJAdvisorFactory -
+				Found AspectJ method: public void com.stackroute.natwest.aop.aspect.MenuAspect.beforeTarget()
+2022-10-06 15:00:16 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory -
+				Creating shared instance of singleton bean 'menuAspect'
+2022-10-06 15:00:16 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory -
+				Creating shared instance of singleton bean 'foodService'
+2022-10-06 15:00:16 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory -
+				Creating shared instance of singleton bean 'menuService'
+2022-10-06 15:00:16 [main] DEBUG c.s.natwest.aop.aspect.MenuAspect -
+				MenuAspect::aroundTarget, Before Proceed
+2022-10-06 15:00:16 [main] INFO  c.s.natwest.aop.aspect.MenuAspect -
+				MenuAspect::beforeTarget
+2022-10-06 15:00:16 [main] DEBUG c.s.natwest.aop.aspect.MenuAspect -
+				MenuAspect::aroundTarget, After Proceed
+2022-10-06 15:00:16 [main] INFO  c.s.natwest.aop.aspect.MenuAspect -
+				MenuAspect::beforeTarget
+2022-10-06 15:00:16 [main] DEBUG c.s.natwest.aop.aspect.MenuAspect -
+				MenuAspect::aroundTarget, Before Proceed
+2022-10-06 15:00:16 [main] DEBUG c.s.natwest.aop.aspect.MenuAspect -
+				MenuAspect::aroundTarget, After Proceed

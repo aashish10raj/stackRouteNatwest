@@ -1,0 +1,238 @@
+<div class="bootstrap-wrapper" style="padding-bottom: 5%;">
+  <div class="container">
+      <div class="row mt20">
+          <div class="col-md-8 offset-md-2">
+              <mat-card>
+
+    <!-- write logic to handle form submission by calling onSubmit() method-->
+    
+      <div class="container text-center">
+        <img src="/assets/nwglogo.png" class="centerimg" alt="" style="width:35%; height:35%;"/>
+    </div>
+      <h1 class="text-center">Sign Up</h1>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" style="margin-left: 10%; margin-right:10%;">
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>CustomerId</mat-label>
+
+      <!-- <div class="row">
+        <div> -->
+          <input formControlName="customerId" type="text" placeholder="Enter CustomerId" required matInput>
+          <mat-error>
+            <div class="text-danger" *ngIf="CustomerId.invalid && (CustomerId.dirty || CustomerId.touched)">
+            CustomerId is required
+          </div></mat-error>
+          </mat-form-field>
+        
+        <!-- </div> -->
+        
+      <!-- </div> -->
+
+      <!-- <div class="row">
+        <div> -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Email</mat-label>
+          <input formControlName="email" type="email" placeholder="Enter Email (User Id)" required matInput>
+          <mat-error>
+            <div class="text-danger" *ngIf="Email.invalid && (Email.dirty || Email.touched)">
+            Valid Email is required
+          </div>
+          </mat-error>
+        </mat-form-field>
+        <!-- </div> -->
+        
+      <!-- </div> -->
+
+      <!-- <div class="row">
+        <div> -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Name</mat-label>
+          <input formControlName="name" type="text" placeholder="Enter User Name" required matInput>
+          <mat-error>
+            <div class="text-danger" *ngIf="Name.invalid && (Name.dirty || Name.touched)">
+              User name is required
+            </div>
+          </mat-error>
+          </mat-form-field>
+        <!-- </div> -->
+        
+      <!-- </div> -->
+
+      <!-- <div class="row">
+        <div> -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Mobile Number</mat-label>
+          <input formControlName="mobileno" type="text" placeholder="Enter mobile number" required matInput>
+          <mat-error>
+            <div class="text-danger" *ngIf="MobileNo.invalid && (MobileNo.dirty || MobileNo.touched)">
+              Valid MobileNo is required
+            </div>
+          </mat-error>
+          </mat-form-field>
+        <!-- </div> -->
+        
+      <!-- </div> -->
+
+      <!-- <div class="row">
+        <div> -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Age</mat-label>
+          <input formControlName="age" type="text" placeholder="Enter Age" required matInput>
+          <mat-error>
+            <div class="text-danger" *ngIf="Age.invalid && (Age.dirty || Age.touched)">
+              Age is required
+            </div>
+          </mat-error>
+          </mat-form-field>
+        <!-- </div> -->
+        
+      <!-- </div> -->
+
+      <!-- <div class="row">
+        <div>
+          <input formControlName="emp_type" type="text" placeholder="Enter employment type(self/salaried/unemployed)">
+        </div>
+        <div class="text-danger" *ngIf="EmpType.invalid&&EmpType.dirty">
+          Emp_type is required
+        </div>
+      </div> -->
+      <!-- <div class="form-group"> -->
+        <!-- <label for="exampleFormControlSelect1"> Select Employment type</label> -->
+        <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Employment Type</mat-label>
+          <mat-select id="exampleFormControlSelect1" formControlName="emp_type" required>
+            <mat-option value="Self-Employed">Self-Employed</mat-option>
+            <mat-option value="salaried">Salaried</mat-option>
+            <mat-option value="unemployed">Unemployed</mat-option>
+          </mat-select>
+          <mat-error>
+            <div class="text-danger" *ngIf="EmpType.invalid && (EmpType.dirty || EmpType.touched)">
+              Employment type is required
+            </div>
+          </mat-error>
+        </mat-form-field>
+        <!-- <select class="form-control" id="exampleFormControlSelect1" formControlName="emp_type" required matInput> 
+          <option value="" disabled selected hidden>Select type of employment</option>       
+          <option>Self-Employed</option>
+          <option>Salaried</option>
+          <option>Unemployed</option>                  
+        </select> -->
+         
+      <!-- </div> -->
+
+      <!-- <div class="row">
+        <div> -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Password</mat-label>
+          <input formControlName="password" type="password" placeholder="Set Password" required matInput>
+          <mat-error>
+            <div class="text-danger" *ngIf="Password.invalid && (Password.dirty || Password.touched)">
+              Password is required and length should be > 8
+            </div>
+          </mat-error>
+          </mat-form-field>
+        <!-- </div> -->
+        
+
+      <!-- </div> -->
+      <!-- <div class="row">
+
+        <div> -->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Confirm Password</mat-label>
+          <input formControlName="cnfpassword" type="password" placeholder="Confirm Password" required matInput>
+          <mat-error>
+            <div class="text-danger" *ngIf="CnfPassword.invalid && (CnfPassword.dirty || CnfPassword.touched)">
+              Confirm Password is Required and length should be > 8
+            </div>
+          </mat-error>
+          </mat-form-field>
+        <!-- </div> -->
+        
+
+      <!-- </div> -->
+
+      <!-- <div class="row">
+            <div>
+            <label>Select the products you want to see: </label>
+          <div *ngFor="let data of Data; let i=index">
+              <input type="checkbox" [value]="data.value"/>
+           
+              {{data.name}}
+          </div>
+          </div>
+        </div> -->
+        
+      <div class="form-check mt-2">
+
+        <p>Select your preferences</p>
+        <!-- <section class="example-section">
+          <mat-checkbox class="example-margin" [(ngModel)]="checked">Checked</mat-checkbox>
+          <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Indeterminate</mat-checkbox>
+        </section> -->
+        <!-- <mat-form-field> -->
+
+        <div>
+        <label class="form-check-label" for="defaultCheck1">
+           Loans
+          <input class="form-check-input largerCheckbox" type="checkbox" value="1" id="defaultCheck1" formControlName="loans">
+        </label> 
+      </div>
+      <!-- </mat-form-field> -->
+
+      <div >
+        <label class="form-check-label" for="defaultCheck1">
+          Credit Card
+          <input class="form-check-input largerCheckbox" type="checkbox" value="1" id="defaultCheck1" formControlName="creditcard">
+
+        </label></div>
+        <div>
+        <label class="form-check-label" for="defaultCheck1">
+          Fixed Deposit
+          <input class="form-check-input largerCheckbox" type="checkbox" value="1" id="defaultCheck1" formControlName="fd">
+        </label></div>
+        <div>
+        <label class="form-check-label" for="defaultCheck1">
+          Insurance
+          <input class="form-check-input largerCheckbox" type="checkbox" value="1" id="defaultCheck1" formControlName="insurance">
+        </label></div>
+        <div>
+        <label class="form-check-label" for="defaultCheck1">
+        Rooster Money
+          <input class="form-check-input largerCheckbox" type="checkbox" value="1" id="defaultCheck1" formControlName="roostermoney">
+        </label></div>
+        <div>
+        <label class="form-check-label" for="defaultCheck1">
+          HouseMate App
+          <input class="form-check-input largerCheckbox" type="checkbox" value="1" id="defaultCheck1" formControlName="housemate">
+        </label>
+        </div>
+        <div>
+        <mat-hint *ngIf="!prod?.length" class="text-warning mt-2 mb-3">Please Select atleast one Product</mat-hint>
+      </div>
+      </div>
+      <br>
+
+      <div class="container text-center">
+        <button mat-raised-button color='primary' type="submit" >Sign Up</button>
+        <!---<button class="ml10" mat-raised-button color='accent'>Reset</button>--->
+        <!-- <p></p>
+        <p>Are you a new user?</p>
+        <a mat-raised-button color='accent' routerLink="/signup" class="btn btn-primary">Sign Up</a> -->
+    </div>
+    </form>
+
+    <!-- write logic to display message -->
+    <div class="alert" *ngIf="message != ''; else elseBlock">
+      successfully added
+    </div>
+    <ng-template #elseBlock>
+      <div class="text-danger">{{errormsg}}</div>
+    </ng-template>
+
+
+</mat-card>
+</div>
+</div>      
+</div>
+</div>

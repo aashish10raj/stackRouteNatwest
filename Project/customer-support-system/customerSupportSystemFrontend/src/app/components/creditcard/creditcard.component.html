@@ -1,0 +1,42 @@
+<div class="container" style="padding-bottom: 10%;">
+    <!-- Content here -->
+    <!-- <div class="mb-4">
+    <form (ngSubmit)="onSubmit()">
+      <label>Enter Required Amount for Loan: </label>
+      <input class="mx-3 my-3" [(ngModel)]="requiredAmt" name="requiredAmt" type="text" placeholder="Required Amount">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div> -->
+
+    <h1>Apply for a Credit Card</h1>
+    <hr>
+    <p>*Credit limit and APR are calculated based on your Credit Assessment</p>
+        <div class="row">
+            <div *ngFor="let card of creditCards" class="col-sm-6 mt-3">
+              <div class="card mx-3">
+                <div class="card-header">
+                  <h2 class="mb-0">{{ card.type }}</h2>
+                </div>
+                <div class="card-body">
+                  
+                  <p class="card-text"> {{ card.desc[0]}}</p>
+                  <p class="card-text"> <b> Purchase Rate: </b> {{ card.purchaseRate }}</p>
+                  <!-- <p class="card-text">  {{ card.purchaseRate }} </p> -->
+                  <p class="card-text"> <b>Annual Fee: </b> {{ card.annualFee }}</p>
+                  <!-- <p class="card-text"> {{ card.annualFee }} </p> -->
+                  <!-- <p > -->
+                    <ul class="card-text">
+                      <li *ngFor="let line of card.desc.slice(1,card.desc.length)"> {{ line }}</li>
+                    </ul>
+                  <!-- </p> -->
+                  <!-- <button mat-raised-button color='primary' type="submit" >Login</button> -->
+                  <a mat-raised-button color='primary' class="btn btn-primary" (click)="onApplyClick(card)" routerLink="/applyCreditCard">Apply Online</a>
+                  <!-- [routerLink]="['/apply', loan_type, loan.interestRate, requiredAmt, loan.time]" -->
+                </div>
+              </div>
+            </div>
+            
+          </div>
+    
+  </div>
+  

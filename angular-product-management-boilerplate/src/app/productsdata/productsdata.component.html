@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ProductName</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products"> 
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.brand}}</td>
+                <td>{{product.quantity}}</td>
+                <td>{{product.price}}</td>
+                <button type="submit" class="btn btn-danger" (click)="deleteProduct(product.id)">delete </button>
+
+            </tr>
+            <!-- Write Your Code Here -->
+        </tbody>
+    </table>
+</div>

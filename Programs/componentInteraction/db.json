@@ -1,0 +1,20 @@
+{
+  "contacts": [
+    {
+      "firstname": "a",
+      "lastname": "q",
+      "email": "aashishraj@duck.com",
+      "city": "a",
+      "phone": "1",
+      "id": 1
+    },
+    {
+      "firstname": "f",
+      "lastname": "testing",
+      "email": "a@am.com",
+      "city": "c",
+      "phone": "p",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "name": "p",
+      "brand": "b",
+      "quility": "1",
+      "price": "12",
+      "id": 1
+    },
+    {
+      "name": "t",
+      "brand": "b",
+      "quility": "1",
+      "price": "34",
+      "id": 2
+    },
+    {
+      "name": "p",
+      "brand": "ee",
+      "quility": "3",
+      "price": "33",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6b551b95-f9d6-49cc-b5c4-f1cb31ae6bcc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/src/main/java/com/rbos/DateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/src/main/java/com/rbos/basic/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/src/main/java/com/rbos/datetime/LocalDateImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/src/main/java/com/rbos/datetime/LocalTimeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateandTimeAPIProject/src/test/java/com/rbos/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/src/main/java/com/natwest/CheckingAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/src/main/java/com/natwest/hr/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/src/main/java/com/natwest/hr/EmployeeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationDemoProject/src/test/java/com/natwest/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rbos/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/rbos/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise-bt-operator-arithmeticoperator" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise-bt-operator-arithmeticoperator" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DQqnFlqY9UrHttuyJjlMXgjC5q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.rbos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CalculatorTest.testAddFailedTwoIntegerNumber">
+    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5DemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rbos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rbos" />
+      <option name="MAIN_CLASS_NAME" value="com.rbos.CalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5DemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rbos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rbos" />
+      <option name="MAIN_CLASS_NAME" value="com.rbos.CalculatorTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.subtract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5DemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rbos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rbos" />
+      <option name="MAIN_CLASS_NAME" value="com.rbos.CalculatorTest" />
+      <option name="METHOD_NAME" value="subtract" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.testAddFailedTwoIntegerNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5DemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rbos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rbos" />
+      <option name="MAIN_CLASS_NAME" value="com.rbos.CalculatorTest" />
+      <option name="METHOD_NAME" value="testAddFailedTwoIntegerNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.testMultiplyTwoIntegerNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5DemoProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rbos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rbos" />
+      <option name="MAIN_CLASS_NAME" value="com.rbos.CalculatorTest" />
+      <option name="METHOD_NAME" value="testMultiplyTwoIntegerNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CalculatorTest.testAddFailedTwoIntegerNumber" />
+        <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.testMultiplyTwoIntegerNumber" />
+        <item itemvalue="JUnit.CalculatorTest.add" />
+        <item itemvalue="JUnit.CalculatorTest.subtract" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b551b95-f9d6-49cc-b5c4-f1cb31ae6bcc" name="Changes" comment="" />
+      <created>1660641822289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660641822289</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

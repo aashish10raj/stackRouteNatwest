@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box{
+            background-color: lightgray;
+            border: 10px solid rebeccapurple;
+            padding: 40px;
+            margin: 40px;
+            width: 300px;
+            height: 150px;
+
+        }
+        .alternate{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste vitae, deleniti perspiciatis numquam libero praesentium cum fuga aliquam rerum vero illo enim molestiae? Autem nobis quidem consectetur dolore. Consectetur, quaerat?</p>
+    </div>
+    <div>
+        <p class="box alternate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, autem.</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\Natwest\Assignments\newz-step4-boilerplate"/>
+			<item value="D:\Natwest\Project\customer-support-system\customerSupportSystemBackend\BankAccount"/>
+			<item value="D:\Natwest\Project\customer-support-system\customerSupportSystemBackend\CreditCardService"/>
+			<item value="D:\Natwest\Project\customer-support-system\customerSupportSystemBackend\CustomerService"/>
+			<item value="D:\Natwest\Project\customer-support-system\customerSupportSystemBackend\LoanService"/>
+			<item value="D:\Natwest\Project\customer-support-system\customerSupportSystemBackend\BankLoansService"/>
+			<item value="D:\Natwest\Project\customer-support-system\EurekaServer"/>
+			<item value="D:\Natwest\Project\customer-support-system\customerSupportSystemBackend"/>
+			<item value="D:\Natwest\Project\customer-support-system\CustomerserviceBackend\CustomerserviceBackend"/>
+			<item value="D:\Natwest\Assignments\newz-step3-boilerplate"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="bankaccount"/>
+			<item value="creditcardservice"/>
+			<item value="customerservice"/>
+			<item value="loanservice"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

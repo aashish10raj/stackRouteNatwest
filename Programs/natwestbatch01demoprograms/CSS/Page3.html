@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: blue;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        section > p{
+            color: brown;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--Descendant Selector-->
+    <div>
+       <h2> Welcome to NatWest FSD Training</h2>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, sequi.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, minus at quia dicta assumenda labore recusandae corporis, harum incidunt similique, ex eligendi molestias molestiae explicabo temporibus dolorum vel nulla maiores!</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore aliquam, natus adipisci perferendis non delectus earum unde consequatur cupiditate animi modi, voluptatum in nobis ratione harum corporis debitis qui?</p>
+        </article>
+    </div>
+
+    <!-- Child Selector (>) -->
+    <section>
+        <h2>This is direct child of section tag</h2>
+        <p>Follows the Paragraph Tag</p>
+        <article>
+            <p>This P tag is not a direct child of the section tag</p>
+        </article>
+        <p>This P tag is also a direct child of the section tag</p>
+    </section>
+    
+</body>
+</html>

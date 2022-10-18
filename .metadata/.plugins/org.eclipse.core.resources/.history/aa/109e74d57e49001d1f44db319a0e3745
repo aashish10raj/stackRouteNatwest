@@ -1,0 +1,47 @@
+package com.project.Customer.controller;
+
+import com.project.Customer.model.Customer;
+import com.project.Customer.services.CustomerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+@RestController
+@CrossOrigin("*")
+public class CustomerController {
+    @Autowired
+    private CustomerService service;
+
+    ResponseEntity response;
+
+    boolean flag;
+    @PostMapping("/addCustomer")
+    public Customer addCustomer(@RequestBody Customer customer) throws Exception{
+        return service.addCustomer(customer);
+    }
+//    public ResponseEntity<?> addCustomer(@RequestBody Customer customer) throws Exception{
+//
+        //        flag=service.addCustomer(customer);
+//
+//        if(flag) {
+//            response=new ResponseEntity<String>("Customer Object Created", HttpStatus.CREATED);
+//        }else {
+//            response=new ResponseEntity<String>("Failure", HttpStatus.BAD_REQUEST);
+//        }
+//        return response;
+//    }
+
+    @GetMapping("/customers")
+    public ResponseEntity<?> getAllCustomer(){
+        List<Customer> customerList=service.getAllCustomers();
+
+        if(customerList !=null) {
+            response=new ResponseEntity<List<Customer>>(customerList, HttpStatus.OK);
+        }else {
+            response=new ResponseEntity<String>("Failure", HttpStatus.BAD_REQUEST);
+        }
+        return response;
+    }
+}

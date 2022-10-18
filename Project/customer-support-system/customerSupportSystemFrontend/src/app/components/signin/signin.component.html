@@ -1,0 +1,63 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row mt20">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                <div class="container text-center">
+                    <img src="/assets/nwglogo.png" class="centerimg" alt="" />
+                </div>
+                <h1 class="text-center">Sign In</h1>
+                <!---{{loginData | json}}-->
+                <form (ngSubmit)="formSubmit()">
+                    <!----username field-->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>CustomerId</mat-label>
+                        <input 
+                        [(ngModel)]="loginData.customerId" 
+                        name="customerId" id="customerId" #customerId="ngModel"
+                        required matInput placeholder="Enter here"/>
+                        <mat-hint>Valid CustomerId</mat-hint>
+                        <mat-error>
+                            <div *ngIf="customerId.invalid && (customerId.dirty || customerId.touched)">
+                                <div *ngIf="customerId.errors?.['required']" class="text-danger">
+                                    Customer Id is required.
+                                </div>
+                            </div>
+                        </mat-error>
+                    </mat-form-field>
+                    <!-- <div *ngIf="customerId.invalid && (customerId.dirty || customerId.touched)">
+                        <div *ngIf="customerId.errors?.['required']" class="text-danger">
+                            Customer Id is required.
+                        </div>
+                    </div> -->
+
+                    <!---password field-->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>User Password</mat-label>
+                        <input 
+                        [(ngModel)]="loginData.password"
+                        name="password" #password="ngModel"
+                        type="password" required matInput placeholder="Enter here"/>
+                        <mat-error>
+                            <div *ngIf="password.invalid && (password.dirty || password.touched)">
+                                <div *ngIf="password.errors?.['required']" class="text-danger">
+                                    Password is required.
+                                </div>
+                            </div>
+                        </mat-error>
+                    </mat-form-field>
+                    
+
+                    <div class="container text-center">
+                        <button mat-raised-button color='primary' type="submit" >Login</button>
+                        <!---<button class="ml10" mat-raised-button color='accent'>Reset</button>--->
+                        <p></p>
+                        <p>Are you a new user?</p>
+                        <a mat-raised-button color='accent' routerLink="/signup" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </form>
+            </mat-card>
+            </div>
+        </div>      
+    </div>
+</div>

@@ -1,0 +1,151 @@
+<div class="container">
+    <!-- Content here -->
+    <h2>Products available for you</h2>   
+    <hr>
+    
+    <div class="row" >
+      <div class="col-sm-4 col-md-3 my-3" *ngIf="productPrefs.includes('loans')">
+        <div class="card mx-2 grey-bg" >
+          
+            <div class="card-body text-center">
+                
+              <div class="card-text">
+                
+                
+                <!-- <div class="list-group list-group-flush" style="width:50%"> -->
+                    <div class="list-group-item dropdown">
+                        <a class="dropdown-toggle" style="text-decoration:inherit; color: inherit; font-size:20px" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div><i class='fas fa-hand-holding-usd mx-2 my-3' style='font-size:48px; color:rgb(92, 34, 146)'></i></div>
+                          Loans
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" [routerLink]="['/loan', 'Personal']">Personal Loan</a></li>
+                          <li *ngIf="customerAge<30"><a class="dropdown-item" [routerLink]="['/loan', 'Educational']">Educational Loan</a></li>
+                          <li *ngIf="customerAge>35"><a class="dropdown-item" [routerLink]="['/loan', 'Home']">Home Loan</a></li>
+                          <li *ngIf="customerAge>35"><a class="dropdown-item" [routerLink]="['/loan', 'Car']">New Car Loan</a></li>
+                          <li><a class="dropdown-item" [routerLink]="['/emical']">EMI Calculator</a></li>
+                        </ul>
+                    </div>
+                <!-- </div> -->
+              </div>
+            </div>
+        </div>
+      </div> 
+
+      <div class="col-sm-4 col-md-3 my-3"  *ngIf="productPrefs.includes('creditcard')">
+        <div class="card mx-2 grey-bg zoom-hover text-center">
+            <div class="card-body">
+                
+              <div class="card-text">
+                
+                <div>
+                <a [routerLink]="['/creditcard']" style="text-decoration:inherit; color: inherit; font-size:20px" role="button">
+                  <div><i class='fas fa-credit-card mx-2 my-3' style='font-size:48px; color:rgb(184, 18, 18)'></i></div>
+                  Credit Card
+                </a>
+              </div>
+
+              <!-- <div class="list-group-item dropdown">
+                <a class="dropdown-toggle" style="text-decoration:inherit; color: inherit; font-size:20px" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Credit Cards
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" [routerLink]="['/creditcard', 'Purchase & Balance Transfer']">Purchase & Balance Transfer card</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/creditcard', 'Balance Transfer']">Balance Transfer credit card</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/creditcard', 'NatWest']">The NatWest Credit Card</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/creditcard', 'Reward']">Reward credit card</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/emical']">EMI Calculator</a></li>
+                </ul>
+            </div> -->
+
+              </div>
+            </div>
+        </div>
+      </div> 
+
+      <div *ngIf="productPrefs.includes('HouseMate')" class="col-sm-4 col-md-3 my-3">
+        <div class="card mx-2 grey-bg zoom-hover text-center">
+            <div class="card-body">
+      
+              <div class="card-text">
+                
+                <div>
+                <a href="https://www.natwest.com/life-moments/housemate.html" target="_blank" style="text-decoration:inherit; color: inherit; font-size:20px" role="button">
+                  <div><i class='fas fa-file-invoice-dollar mx-2 my-3' style='font-size:48px; color:rgb(92, 34, 146)'></i></div>
+                  HouseMate App
+                </a>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div> 
+
+      <div *ngIf="productPrefs.includes('roosterMoney')" class="col-sm-4 col-md-3 my-3">
+        <div class="card mx-2 grey-bg zoom-hover text-center">
+            <div class="card-body">
+                
+              <div class="card-text">
+                
+              <div>
+                <a href="https://roostermoney.com/" target="_blank" style="text-decoration:inherit; color: inherit; font-size:20px" role="button">
+                  <div><i class='fas fa-piggy-bank mx-2 my-3' style='font-size:48px; color:rgb(92, 34, 146)'></i></div>
+                  Rooster Money
+                </a>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div> 
+      
+      <div *ngIf="productPrefs.includes('FD')" class="col-sm-4 col-md-3 my-3">
+        <div class="card mx-2 grey-bg zoom-hover text-center">
+            <div class="card-body">
+                
+              <div class="card-text">
+                
+              <div>
+                <a [routerLink]="['/loan', 'Personal']" style="text-decoration:inherit; color: inherit; font-size:20px" role="button">
+                  <div><i class='fas fa-money-bill-alt mx-2 my-3' style='font-size:48px; color:rgb(184, 18, 18)'></i></div>
+                  Fixed Deposit
+                </a>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div> 
+      <div class="col-sm-4 col-md-3 my-3"  *ngIf="productPrefs.includes('insurance')">
+        <div class="card mx-2 grey-bg zoom-hover text-center">
+            <div class="card-body">
+              <div class="card-text">
+                <!-- <i class='fas fa-shield-alt mx-2 my-3' style='font-size:48px; color:rgb(92, 34, 146)'></i> -->
+              <div>
+                <a href="https://www.natwest.com/insurance.html" target="_blank" style="text-decoration:inherit; color: inherit; font-size:20px" role="button">
+                  <div><i class='fas fa-shield-alt mx-2 my-3' style='font-size:48px; color:rgb(92, 34, 146)'></i></div>
+                  Insurance
+                </a>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div> 
+
+      <!-- <div class="col-sm-4 col-md-3 my-3">
+        <div class="card mx-2">
+            <div class="card-body">
+                
+              <div class="card-text">
+                <i class='fas fa-calculator mx-2 my-3' style='font-size:48px'></i>
+              <div>
+                <a [routerLink]="['/emical']" style="text-decoration:inherit; color: inherit; font-size:20px" role="button">
+                  EMI Calculator
+                </a>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>  -->
+
+   
+    </div>
+  
+</div>

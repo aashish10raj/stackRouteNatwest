@@ -1,0 +1,22 @@
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+        <img width="230px" height="280px" src="{{userdata.picture}}" class="card-img-top">
+        <div class="col-md-8">
+              <h5 class="card-title">{{userdata.title}}{{userdata.firstName}} {{userdata.lastName}}</h5>
+              <p class="card-text">{{userdata.email}}</p>
+              <p class="card-text">{{userdata.gender}}</p>
+              <p class="card-text">{{userdata.dateOfBirth}}</p>
+              <p class="card-text">{{userdata.location.street}}, {{userdata.location.city}}, {{userdata.location.country}}</p>
+              <p class="card-text">{{userdata.phone}}</p>
+              <p class="card-text">{{userdata.updatedDate}}</p>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

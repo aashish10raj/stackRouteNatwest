@@ -1,0 +1,24 @@
+{
+  "issues": [
+    {
+      "title": "Dependencies issue in pom.xml",
+      "description": "Remove redundant dependencies in pom.xml",
+      "id": 1
+    },
+    {
+      "title": "title test",
+      "description": "test desc",
+      "id": 3
+    },
+    {
+      "title": "1",
+      "description": "q",
+      "id": 4
+    },
+    {
+      "title": "1",
+      "description": "pqrst",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+/* Element Selector */
+h2,span{
+    color: darkgreen;
+    font-family: Arial;
+    font-size: large;
+    text-decoration: none;
+}
+/* Class Selector */
+.mystyle{
+    background-color: yellow;
+    color: brown;
+    font-size: 25pt;
+    font-family: sans-serif;
+}
+/* ID Selector */
+#txt1{
+    font-family: Arial;
+    font-size: 15pt;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}

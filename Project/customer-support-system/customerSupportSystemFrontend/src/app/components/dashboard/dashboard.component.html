@@ -1,0 +1,89 @@
+<div class="container" style="padding-bottom: 10%;">
+<h1 class="ml">My Dashboard</h1>
+    <hr>
+  
+<div class="card mb-4">
+  <div class="card-header">
+    <h2 class="mb-0">My Accounts</h2>
+  </div>
+    <div class="card-body">
+
+<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Account No.</th>
+        <th scope="col">Account Type</th>
+        <th scope="col">Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let acc of accountsList">
+        <th scope="row"> {{ acc.accNo }} </th>
+        <td> {{ acc.accType }} </td>
+        <td> {{ acc.balance }} </td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h2 class="mb-0">My Loan Applications</h2>
+  </div>
+    <div class="card-body">
+
+  <!-- <h2>My Loan Applications</h2> -->
+<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Loan Id</th>
+        <th scope="col">Loan Type</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Interest Rate</th>
+        <th scope="col">Tenure</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let loan of loansList">
+            <th scope="row"> {{ loan.loanId }} </th>
+            <td> {{ loan.loanType }} </td>
+            <td> {{ loan.amount }} </td>
+            <td> {{ loan.interestRate }} </td>
+            <td> {{ loan.tenure }} </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h2 class="mb-0">My Credit Card Applications</h2>
+  </div>
+    <div class="card-body">
+  <!-- <h2>My Credit Card Applications</h2> -->
+<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Card Id</th>
+        <th scope="col">Card Type</th>
+        <th scope="col">Credit Limit</th>
+        <th scope="col">Annual Percentage Rate</th>
+        <th scope="col">Annual Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let card of cardsList">
+            <th scope="row"> {{ card.cardId }} </th>
+            <td> {{ card.cardType }} </td>
+            <td> {{ card.creditLimit }} </td>
+            <td> {{ card.apr }} </td>
+            <td> {{ card.annualFee }} </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>

@@ -1,0 +1,32 @@
+{
+  "persons": [
+    {
+      "id": 1,
+      "name": "Ashish Raj",
+      "email": "Ashish@gmail.com",
+      "city": "Hyderabad",
+      "phone": "233-5678-123"
+    },
+    {
+      "name": "Gaurav S",
+      "email": "Gaurav@gmail.com",
+      "city": "Lukhnow",
+      "phone": "987-6756-223",
+      "id": 2
+    },
+    {
+      "name": "Deepi Garg",
+      "email": "Deepi@gmail.com",
+      "city": "Mumbai",
+      "phone": "987-6756-223",
+      "id": 3
+    },
+    {
+      "name": "Haresh S",
+      "email": "Haresh@gmail.com",
+      "city": "Pune",
+      "phone": "890-4356-122",
+      "id": 5
+    }
+  ]
+}

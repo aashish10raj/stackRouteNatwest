@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="productForm" (ngSubmit)="AddProduct()">
+        <div class="col-md-4 offset-md-4">
+         <div class="mt-2">
+            <input type="text" formControlName="productName" class="form-control" placeholder="Product Name" />
+            <div class="mt-1 text-danger" *ngIf="ProductName?.invalid&&ProductName?.dirty">
+                Product Name is Required
+            </div>
+            <div class="mt-2">
+                <input type="text" formControlName="brand" class="form-control" placeholder="Brand" />
+                <div class="mt-1 text-danger" *ngIf="Brand?.invalid&&Brand?.dirty">
+                Brand Name is Required
+                </div>
+         </div>
+         <div class="mt-2">
+            <input type="text" formControlName="description" class="form-control" placeholder="Description" />
+            <div class="mt-1 text-danger" *ngIf="Description?.invalid&&Description?.dirty">
+            Description is Required & Minimum Length shold be 10 
+            </div>
+     </div>
+     <div class="mt-2">
+        <input type="text" formControlName="quantity" class="form-control" placeholder="quantity" />
+        <div class="mt-1 text-danger" *ngIf="Quantity?.invalid&&Quantity?.dirty">
+        Quantity is Required & Should be less than 100
+        </div>
+ </div>
+ <div class="mt-2">
+    <input type="text" formControlName="price" class="form-control" placeholder="price" />
+    <div class="mt-1 text-danger" *ngIf="Price?.invalid&&Price?.dirty">
+    Price is Required
+    </div>
+</div>
+         <div class="mt-2">
+            <button class="btn btn-secondary">Add Product</button>
+         </div>
+
+        </div>
+   
+    </div>
+</form>
+</div>
